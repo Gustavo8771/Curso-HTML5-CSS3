@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@keyframes menuAnimation {
+    from {background-color: rgb(77, 73, 73);}
+    to {background-color: #808080;}
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -19,18 +24,47 @@ header > h1 {
     text-align: center;
 }
 
+header > i {
+    background-color: rgb(61, 58, 58);
+    display: block;
+    width: 97vw;
+    border-top: 2px rgb(44, 42, 42);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header > i:hover {
+    animation-name: menuAnimation;
+    animation-duration: 500ms;
+    background-color: #808080;
+    cursor: pointer;
+}
+
+menu {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 li {
     list-style: none;
-    display: inline-block;
+    display: block;
     padding: 10px;
     background-color: rgb(77, 73, 73);
+    border-top: 4px solid rgb(48, 45, 45);
+    text-align: center;
 }
 
 li:hover {
+    animation-name: menuAnimation;
+    animation-duration: 500ms;
     background-color: #808080;
 }
 
-li > a {
+menu > ul > li > a {
     text-decoration: none;
     color: white;
 }
@@ -41,5 +75,15 @@ article#artigo1 {
     margin: auto;
     margin-top: 10px;
     padding: 10px;
+    width: 90vw;
     max-width: 780px;
+}
+
+article > h2 {
+    padding: 10px;
+}
+
+article > p {
+    text-indent: 20px;
+    padding: 10px 10px;
 }

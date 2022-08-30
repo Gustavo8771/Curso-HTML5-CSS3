@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i class="material-icons" onclick="clickMenu()">
+            menu
+        </i>
+        <menu id="menu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -26,8 +30,16 @@
             <h2>Testando Medias Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam voluptates cupiditate nostrum id ut possimus ipsam itaque a, nesciunt temporibus deserunt vel voluptas ea ullam pariatur veritatis quia suscipit quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eaque tempore accusamus! Officia sapiente illum omnis provident facilis explicabo molestias blanditiis, et nihil fugit quasi commodi! Debitis sunt aut cum!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore est laboriosam ea consequatur sit tempore ratione dignissimos totam in nostrum quisquam aliquam soluta porro eligendi, neque quasi enim. Accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex distinctio nesciunt aperiam consequatur perspiciatis sit officiis quasi, neque asperiores aut esse debitis a nam recusandae assumenda architecto? Eius, deserunt tempore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam expedita, maiores ducimus quo dicta sed doloremque repudiandae ex modi, debitis asperiores saepe neque esse laboriosam! Architecto fugit aspernatur natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident cum doloremque deserunt, quibusdam quisquam nobis corporis tempora magni. Sequi quasi eius est, perferendis obcaecati deserunt consequuntur officia ut sed.</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display == "none") {menu.style.display = "block"}
+            else {menu.style.display = "none"}
+        }
+    </script>
 
 </body>
 </html>
