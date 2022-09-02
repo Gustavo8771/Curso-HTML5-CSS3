@@ -24,7 +24,7 @@ header > h1 {
     text-align: center;
 }
 
-header > i {
+i#burguer {
     background-color: rgb(61, 58, 58);
     display: block;
     width: 97vw;
@@ -34,7 +34,7 @@ header > i {
     padding: 10px;
 }
 
-header > i:hover {
+i#burguer:hover {
     animation-name: menuAnimation;
     animation-duration: 500ms;
     background-color: #808080;
