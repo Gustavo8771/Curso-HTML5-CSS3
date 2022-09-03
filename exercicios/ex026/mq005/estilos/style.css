@@ -1,14 +1,9 @@
 @charset "UTF-8";
 
-@keyframes menuAnimation {
-    from {background-color: rgb(77, 73, 73);}
-    to {background-color: #808080;}
-}
-
 * {
-    padding: 0;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body, html {
@@ -16,74 +11,66 @@ body, html {
 }
 
 header {
-    background-color: #949494;
+    background-color: gray;
 }
 
 header > h1 {
-    padding: 15px;
-    text-align: center;
-}
-
-i#burguer {
-    background-color: rgb(61, 58, 58);
-    display: block;
-    width: 97vw;
-    border-top: 2px rgb(44, 42, 42);
-    color: white;
-    text-align: center;
     padding: 10px;
-}
-
-i#burguer:hover {
-    animation-name: menuAnimation;
-    animation-duration: 500ms;
-    background-color: #808080;
-    cursor: pointer;
+    text-align: center;
 }
 
 menu {
     display: none;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    list-style: none;
+i#burguer {
     display: block;
-    padding: 10px;
-    background-color: rgb(77, 73, 73);
-    border-top: 4px solid rgb(48, 45, 45);
     text-align: center;
-}
-
-li:hover {
-    animation-name: menuAnimation;
-    animation-duration: 500ms;
-    background-color: #808080;
-}
-
-menu > ul > li > a {
-    text-decoration: none;
+    background-color: rgb(37, 37, 37);
+    padding: 5px 5px;
+    border-top: 2px solid rgb(0, 0, 0);
     color: white;
 }
 
-article#artigo1 {
+i#burguer:hover {
+    cursor: pointer;
     background-color: white;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 10px;
+    color: black;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
     padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    border-top: 2px solid rgb(41, 41, 41);
+}
+
+menu > ul > li > a:hover {
+    background-color: gray;
+}
+
+main {
     width: 90vw;
-    max-width: 780px;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 article > h2 {
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 article > p {
     text-indent: 20px;
-    padding: 10px 10px;
+    text-align: justify;
+    margin-bottom: 10px;
 }

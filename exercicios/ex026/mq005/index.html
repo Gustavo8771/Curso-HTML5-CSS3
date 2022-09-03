@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="estilos/pc.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <i class="material-icons" id="burguer" onclick="clickMenu()">
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
             menu
         </i>
         <menu id="menu">
@@ -25,21 +24,23 @@
             </ul>
         </menu>
     </header>
-
     <main>
-        <article id="artigo1">
+        <article>
             <h2>Testando Medias Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam voluptates cupiditate nostrum id ut possimus ipsam itaque a, nesciunt temporibus deserunt vel voluptas ea ullam pariatur veritatis quia suscipit quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eaque tempore accusamus! Officia sapiente illum omnis provident facilis explicabo molestias blanditiis, et nihil fugit quasi commodi! Debitis sunt aut cum!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolore est laboriosam ea consequatur sit tempore ratione dignissimos totam in nostrum quisquam aliquam soluta porro eligendi, neque quasi enim. Accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex distinctio nesciunt aperiam consequatur perspiciatis sit officiis quasi, neque asperiores aut esse debitis a nam recusandae assumenda architecto? Eius, deserunt tempore.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam expedita, maiores ducimus quo dicta sed doloremque repudiandae ex modi, debitis asperiores saepe neque esse laboriosam! Architecto fugit aspernatur natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident cum doloremque deserunt, quibusdam quisquam nobis corporis tempora magni. Sequi quasi eius est, perferendis obcaecati deserunt consequuntur officia ut sed.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque laboriosam voluptate nemo, eum cupiditate distinctio praesentium exercitationem, fugiat enim aperiam voluptas, quam nesciunt facilis eius nobis sint porro ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, eaque. Expedita dolore quas modi, adipisci alias magni quam aperiam obcaecati perferendis voluptas inventore dolores molestias fugiat numquam quae illum doloremque?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo sint quis veniam blanditiis, sed eaque magnam rerum architecto commodi quae enim, saepe animi asperiores odio nobis minus consequatur iure temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolor accusantium aliquam doloribus tenetur laudantium reprehenderit rerum, eum repudiandae itaque nemo quam ratione eaque eligendi ipsa deleniti error aliquid. Magni.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo delectus doloremque excepturi fugiat, alias nobis odio. Aspernatur necessitatibus consectetur dolores cupiditate atque id quasi, officiis eaque voluptatibus enim excepturi autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eum, at recusandae molestias culpa dolorum eius unde nostrum ea vitae porro mollitia dolore perspiciatis, tempore quasi? Error vel beatae at? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptatem, quidem iusto maxime animi porro expedita odit minima! Obcaecati repudiandae non et nemo eos commodi voluptatem porro ex iure iste.</p>
         </article>
     </main>
 
     <script>
         function clickMenu() {
-            if (menu.style.display == "none") {menu.style.display = "block"} else {menu.style.display = "none"}
+            if (menu.style.display == "none") {
+                menu.style.display = "block"
+            } else {
+                menu.style.display = "none"
+            }
         }
     </script>
-
 </body>
 </html>
